@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SHORTEST AND LONGEST WORD | URK20CS2014</title>
+    </head>
+    <body>
+    <script>
+        function long_short()
+        {
+            len = str1.length
+            const arr = str1.split(' ');
+            arr.sort((a,b) => a.length - b.length);
+            len = arr.length
+            document.write("SHOTEST AND LONGEST WORD IN A STRING");
+            document.write("<br>");
+            document.write("Shortest Word: "+ arr[0]);
+            document.write("<br>");
+            document.write("Longest Word: "+ arr[len-1]);
+        }
+        var str1 = prompt("Enter a string: ");
+        var smallest = long_short(str1);
+    </script>
+</body>
+</html>
+</html>
